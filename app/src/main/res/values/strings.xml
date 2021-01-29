@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">PersonalMap</string>
-
+    <string name="public_token"></string>
+    <string name="secret_token"></string>
     <!--Custom location layer plugin icon-->
 </resources>

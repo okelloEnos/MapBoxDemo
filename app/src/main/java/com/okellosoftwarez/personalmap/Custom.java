@@ -41,9 +41,8 @@ public class Custom extends AppCompatActivity implements OnMapReadyCallback {
     private static final String ICON_ID = "ICON_ID";
     private static final String LAYER_ID = "LAYER_ID";
 
-    private static final float ZOOM_LEVEL_FOR_SWITCH = 12;
-    private static final String BLUE_PERSON_ICON_ID = "blue-car-icon-marker-icon-id";
-    private static final String BLUE_PIN_ICON_ID = "blue-marker-icon-marker-icon-id";
+    private Point origin;
+    private Point destination;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
