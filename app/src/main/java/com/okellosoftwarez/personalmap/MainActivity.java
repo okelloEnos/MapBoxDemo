@@ -49,7 +49,7 @@ import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.lineWidth;
 public class MainActivity extends AppCompatActivity {
 
     private MapView mapView;
-    private Button button, routeBtn;
+    private Button button, routeBtn, userLocBtn;
     private TextView textView;
     private Point origin, destination;
     private static final String ROUTE_LAYER_ID = "route-layer-id";
@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
         button = findViewById(R.id.button);
         routeBtn = findViewById(R.id.routeBtn);
+        userLocBtn = findViewById(R.id.userBtn);
         textView = findViewById(R.id.textView);
         textView.setText("Distance : N/A            Time : N/A" );
 
@@ -116,6 +117,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Places.class);
+                startActivity(intent);
+            }
+        });
+
+        userLocBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, UserLocation.class);
                 startActivity(intent);
             }
         });

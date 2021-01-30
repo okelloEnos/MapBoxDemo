@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.okellosoftwarez.personalmap">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PersonalMap">
-        <activity android:name=".Places"></activity>
+        <activity android:name=".UserLocation"></activity>
+        <activity android:name=".Places" />
         <activity android:name=".Custom" />
         <activity android:name=".MainActivity">
             <intent-filter>

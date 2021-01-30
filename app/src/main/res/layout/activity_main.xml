@@ -15,7 +15,7 @@
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dynamic Map" />
+        android:text="Places Map" />
 
     <Button
         android:id="@+id/routeBtn"
@@ -26,6 +26,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="map route" />
+
+    <Button
+        android:id="@+id/userBtn"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Location" />
 
     <TextView
         android:id="@+id/textView"
@@ -38,7 +48,7 @@
 
     <com.mapbox.mapboxsdk.maps.MapView
         android:id="@+id/mapView"
-        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintTop_toBottomOf="@id/userBtn"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

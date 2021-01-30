@@ -72,8 +72,6 @@ public class Places extends AppCompatActivity implements OnMapReadyCallback {
                 addUserLocations();
 
                 // Add the symbol layer icon to map for future use
-//                style.addImage(symbolIconId, BitmapFactory.decodeResource(
-//                        Places.this.getResources(), R.drawable.marker_location));
                 // Add the red marker icon image to the map
                 style.addImage(symbolIconId, BitmapUtils.getBitmapFromDrawable(
                         getResources().getDrawable(R.drawable.marker_location)));

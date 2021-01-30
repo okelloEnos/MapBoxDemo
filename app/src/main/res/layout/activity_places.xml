@@ -15,7 +15,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        mapbox:mapbox_cameraZoom="0.346515"
+        mapbox:mapbox_cameraZoom="11"
         />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
